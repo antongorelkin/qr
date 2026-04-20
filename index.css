@@ -1,10 +1,10 @@
 :root {
   --color-bg-muted: hsl(212, 45%, 89%);
   --space-1: 0.25rem;
-  --space-2: 0.75rem;
-  --space-3: 1rem;
-  --space-4: 2rem;
-  --space-5: 0.5rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 2rem;
   --color-text: #68778D;
 }
 
@@ -22,25 +22,25 @@ body {
 
 .qr-container {
   background-color: white;
-  border-radius: var(--space-4);
+  border-radius: var(--space-3);
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: clamp(var(--space-2), 2.5vw, 24px);
+  padding: clamp(var(--space-3), 2.5vw, 24px);
   max-width: 320px;
   justify-content: space-between;
-  gap: var(--space-4);
+  gap: var(--space-5);
 }
 
 .qr-img {
-  border-radius: var(--space-5);
+  border-radius: var(--space-4);
 }
 
 .qr-title {
-  font-size: var(--space-3);
+  font-size: var(--space-4);
   line-height: 120%;
   text-align: center;
   margin: 0;
@@ -51,11 +51,11 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 1rem;
-  gap: var(--space-3);
+  gap: var(--space-4);
 }
 
 .qr-dscr {
-  font-size: var(--space-2);
+  font-size: var(--space-3);
   text-align: center;
   color: var(--color-text);
   line-height: 140%;
