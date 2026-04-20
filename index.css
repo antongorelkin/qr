@@ -29,18 +29,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: clamp(var(--space-3), 2.5vw, 24px);
+  padding: clamp(var(--space-3), 2.5vw, var(--space-5));
   max-width: 320px;
   justify-content: space-between;
   gap: var(--space-5);
 }
 
 .qr-img {
-  border-radius: var(--space-4);
+  border-radius: var(--space-3);
 }
 
 .qr-title {
-  font-size: var(--space-4);
+  font-size: var(--space-3);
   line-height: 120%;
   text-align: center;
   margin: 0;
