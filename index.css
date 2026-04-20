@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  background-color: hsl(216, 15%, 48%);
+  background-color: hsl(212, 45%, 89%);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -42,7 +42,7 @@ body {
   align-items: center;
   gap: 16px;
   padding: 0 16px;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .qr-dscr {
