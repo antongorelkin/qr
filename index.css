@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: clamp(var(--space-3), 2.5vw, var(--space-5));
-  max-width: 20rem;
+  max-width: clamp(18rem, 90%, 40rem);
   gap: var(--space-5);
 }
 
@@ -71,11 +71,12 @@ body {
 .qr-link {
   outline: none;
   border-radius: var(--space-3);
-  transition: box-shadow 0.2s;
+  transition: outline 0.2s;
 }
 
 .qr-link:focus-visible {
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #1F2937;
+  outline: 3px solid #1F2937;
+  outline-offset: 4px;
 }
 
 .qr-link:hover {
