@@ -30,13 +30,6 @@ body {
   position: relative;
 }
 
-.qr-container img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -51,6 +44,7 @@ body {
   border-radius: var(--space-3);
   max-width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .qr-title {
@@ -80,7 +74,7 @@ body {
 .qr-link {
   outline: none;
   border-radius: var(--space-3);
-  transition: box-shadow 0.2s border-color 0.2s;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
   border: 2px solid transparent;
 }
 
