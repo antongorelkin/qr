@@ -35,7 +35,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: clamp(var(--space-3), 2.5vw, var(--space-5));
-  max-width: 20rem;
+  max-width: clamp(18rem, 90%, 40rem);
   gap: var(--space-5);
 }
 
@@ -59,7 +59,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1rem;
+  padding-inline: 1rem;
   gap: var(--space-4);
 }
 
@@ -86,4 +86,20 @@ body {
 
 .qr-link:hover {
   opacity: 0.9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .qr-link {
+    transition: none;
+  }
+
+  .qr-link:hover {
+    opacity: 1;
+  }
 }
