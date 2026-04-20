@@ -5,11 +5,14 @@
   --space-3: 0.75rem;
   --space-4: 1rem;
   --space-5: 2rem;
-  --color-text: #68778D;
+  --color-text: #1F2937;
+  --color-text-secondary: #4B5563;
 }
 
 body {
   font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .container {
@@ -30,7 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: clamp(var(--space-3), 2.5vw, var(--space-5));
-  max-width: 320px;
+  max-width: 20rem;
   justify-content: space-between;
   gap: var(--space-5);
 }
@@ -40,10 +43,11 @@ body {
 }
 
 .qr-title {
-  font-size: var(--space-3);
-  line-height: 120%;
+  font-size: 1.5rem;
+  line-height: 1.4;
   text-align: center;
   margin: 0;
+  color: var(--color-text);
 }
 
 .text-content {
@@ -55,9 +59,24 @@ body {
 }
 
 .qr-dscr {
-  font-size: var(--space-3);
+  font-size: 0.875rem;
   text-align: center;
-  color: var(--color-text);
-  line-height: 140%;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
   margin: 0;
+}
+
+.qr-link {
+  outline: none;
+  border-radius: var(--space-3);
+  transition: outline 0.2s;
+}
+
+.qr-link:focus-visible {
+  outline: 2px solid #1F2937;
+  outline-offset: 2px;
+}
+
+.qr-link:hover {
+  opacity: 0.9;
 }
