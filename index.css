@@ -26,6 +26,15 @@ body {
 .qr-container {
   background-color: white;
   border-radius: var(--space-3);
+  overflow: hidden;
+  position: relative;
+}
+
+.qr-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .content {
@@ -71,11 +80,14 @@ body {
 .qr-link {
   outline: none;
   border-radius: var(--space-3);
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s border-color 0.2s;
+  border: 2px solid transparent;
 }
 
 .qr-link:focus-visible {
-  box-shadow: 0 0 0 2px white, 0 0 0 4px #1F2937;
+  box-shadow: 0 0 0 4px rgba(34, 150, 243, 0.18);
+  border-color: rgba(34, 150, 243, 0.9);
+  outline: none;
 }
 
 .qr-link:hover {
