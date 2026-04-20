@@ -1,9 +1,10 @@
 :root {
   --color-bg-muted: hsl(212, 45%, 89%);
   --space-1: 0.25rem;
-  --space-2: 0.5rem;
+  --space-2: 0.75rem;
   --space-3: 1rem;
   --space-4: 2rem;
+  --color-text: #68778D;
 }
 
 body {
@@ -20,17 +21,17 @@ body {
 
 .qr-container {
   background-color: white;
-  border-radius: 20px;
+  border-radius: var(--space-4);
 }
 
 .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: clamp(12px, 2.5vw, 24px);
+  padding: clamp(var(--space-2), 2.5vw, 24px);
   max-width: 320px;
   justify-content: space-between;
-  gap: 24px;
+  gap: var(--space-4);
 }
 
 .qr-img {
@@ -53,9 +54,9 @@ body {
 }
 
 .qr-dscr {
-  font-size: 15px;
+  font-size: var(--space-2);
   text-align: center;
-  color: #68778D;
+  color: var(--color-text);
   line-height: 140%;
   margin: 0;
 }
